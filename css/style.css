@@ -34,7 +34,7 @@ body{font-family:var(--fb);background:var(--black);color:var(--white);line-heigh
 .sidebar-link{display:flex;align-items:center;gap:14px;padding:14px 16px;font-size:.9rem;font-weight:500;color:var(--g500);text-decoration:none;transition:var(--tr);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px;border-left:3px solid transparent}
 .sidebar-link:hover,.sidebar-link.active{color:var(--red);background:rgba(255,62,62,.05);border-left-color:var(--red)}
 .sidebar-link.active{text-shadow:0 0 8px rgba(255,62,62,.3)}
-.s-bolt{font-size:1.1rem;width:24px;text-align:center}
+.s-bolt{width:24px;height:24px;display:flex;align-items:center;justify-content:center}
 .sidebar-footer{padding:20px 24px;border-top:1px solid rgba(255,62,62,.1)}
 .sidebar-pulse{font-size:.75rem;color:var(--red);text-align:center;margin-bottom:12px;animation:neonPulse 2s ease infinite}
 @keyframes neonPulse{0%,100%{opacity:.5}50%{opacity:1;text-shadow:var(--red-glow)}}
@@ -78,7 +78,7 @@ body{font-family:var(--fb);background:var(--black);color:var(--white);line-heigh
 .prog-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--red);transform:scaleX(0);transition:transform .4s ease;transform-origin:left}
 .prog-card:hover{border-color:rgba(255,62,62,.2);transform:translateY(-4px)}
 .prog-card:hover::after{transform:scaleX(1)}
-.prog-icon{font-size:2rem;margin-bottom:12px}
+.prog-icon{margin-bottom:12px;display:flex;align-items:center;justify-content:center}
 .prog-card h3{font-family:var(--ff);font-size:1.5rem;letter-spacing:.05em;margin-bottom:8px}
 .prog-card p{font-size:.8rem;color:var(--g500)}
 
@@ -92,7 +92,7 @@ body{font-family:var(--fb);background:var(--black);color:var(--white);line-heigh
 .pd-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transition:transform .4s ease;transform-origin:left}
 .pd-card:hover{border-color:rgba(255,62,62,.2);transform:translateY(-4px)}
 .pd-card:hover::before{transform:scaleX(1)}
-.pd-icon{font-size:2.5rem;margin-bottom:12px}
+.pd-icon{margin-bottom:12px;display:flex;align-items:center;justify-content:center}
 .pd-card h3{font-family:var(--ff);font-size:1.5rem;letter-spacing:.05em;margin-bottom:10px}
 .pd-card>p{font-size:.85rem;color:var(--g500);margin-bottom:16px;line-height:1.6}
 .pd-feat{list-style:none}

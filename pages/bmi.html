@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator — Power Fitness</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header"><div class="sidebar-logo">PF</div><span class="sidebar-brand">POWER<span class="red">FIT</span></span><button class="sidebar-close" id="sidebarClose">✕</button></div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link"><span class="s-bolt">⚡</span>Home</a>
+      <a href="programs.html" class="sidebar-link"><span class="s-bolt">🏋️</span>Programs</a>
+      <a href="bmi.html" class="sidebar-link active"><span class="s-bolt">📊</span>BMI Tool</a>
+      <a href="pricing.html" class="sidebar-link"><span class="s-bolt">💰</span>Pricing</a>
+    </nav>
+    <div class="sidebar-footer"><p class="sidebar-pulse">🔴 LIVE — Open Now</p><a href="pricing.html" class="sidebar-cta">JOIN NOW</a></div>
+  </aside>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container"><a href="../index.html" class="nav-brand"><span class="brand-icon">PF</span><span class="brand-text">POWER<span class="red">FITNESS</span></span></a>
+    <ul class="nav-links" id="navLinks"><li><a href="../index.html" class="nav-link">Home</a></li><li><a href="programs.html" class="nav-link">Programs</a></li><li><a href="bmi.html" class="nav-link active">BMI</a></li><li><a href="pricing.html" class="nav-link nav-cta">Join</a></li></ul>
+    <button class="hamburger" id="hamburger"><span class="h-line"></span><span class="h-line"></span><span class="h-line"></span></button></div>
+  </nav>
+  <section class="page-hero"><div class="container"><span class="section-tag" data-slide>Free Tool</span><h1 class="page-title" data-slide data-delay="200">BMI <span class="neon">CALCULATOR</span></h1></div></section>
+  <section class="bmi-section section">
+    <div class="container bmi-grid">
+      <div class="bmi-info" data-slide="left">
+        <h2>Know Where You Stand</h2>
+        <p>First step of your transformation. Check your Body Mass Index and start your fitness journey.</p>
+        <div class="bmi-scale">
+          <div class="scale-item uw"><span>&lt;18.5</span>Underweight</div>
+          <div class="scale-item nm"><span>18.5-24.9</span>Normal</div>
+          <div class="scale-item ow"><span>25-29.9</span>Overweight</div>
+          <div class="scale-item ob"><span>30+</span>Obese</div>
+        </div>
+      </div>
+      <div class="bmi-calc" data-slide="right">
+        <h3>Calculate Your BMI</h3>
+        <div class="bmi-inputs"><div class="bmi-g"><label>Height (cm)</label><input type="number" id="bmiHeight" placeholder="170" min="100" max="250" /></div><div class="bmi-g"><label>Weight (kg)</label><input type="number" id="bmiWeight" placeholder="70" min="30" max="200" /></div></div>
+        <button class="btn btn-primary btn-full" id="calcBMI">CALCULATE</button>
+        <div id="bmiResult" class="bmi-result hidden">
+          <div class="bmi-val"><span id="bmiNumber">0</span></div>
+          <div class="bmi-cat" id="bmiCategory">-</div>
+          <p class="bmi-msg" id="bmiMessage"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><div class="container footer-bottom"><p>© 2024 Power Fitness. All rights reserved.</p><p>Built by <strong>Mohd Haziq</strong></p></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

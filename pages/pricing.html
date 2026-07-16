@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Power Fitness</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header"><div class="sidebar-logo">PF</div><span class="sidebar-brand">POWER<span class="red">FIT</span></span><button class="sidebar-close" id="sidebarClose">✕</button></div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link"><span class="s-bolt">⚡</span>Home</a>
+      <a href="programs.html" class="sidebar-link"><span class="s-bolt">🏋️</span>Programs</a>
+      <a href="bmi.html" class="sidebar-link"><span class="s-bolt">📊</span>BMI Tool</a>
+      <a href="pricing.html" class="sidebar-link active"><span class="s-bolt">💰</span>Pricing</a>
+    </nav>
+    <div class="sidebar-footer"><p class="sidebar-pulse">🔴 LIVE — Open Now</p><a href="pricing.html" class="sidebar-cta">JOIN NOW</a></div>
+  </aside>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container"><a href="../index.html" class="nav-brand"><span class="brand-icon">PF</span><span class="brand-text">POWER<span class="red">FITNESS</span></span></a>
+    <ul class="nav-links" id="navLinks"><li><a href="../index.html" class="nav-link">Home</a></li><li><a href="programs.html" class="nav-link">Programs</a></li><li><a href="bmi.html" class="nav-link">BMI</a></li><li><a href="pricing.html" class="nav-link nav-cta active">Join</a></li></ul>
+    <button class="hamburger" id="hamburger"><span class="h-line"></span><span class="h-line"></span><span class="h-line"></span></button></div>
+  </nav>
+  <section class="page-hero"><div class="container"><span class="section-tag" data-slide>Pricing</span><h1 class="page-title" data-slide data-delay="200">INVEST IN <span class="neon">YOURSELF</span></h1></div></section>
+  <section class="pricing-section section">
+    <div class="container">
+      <div class="pricing-toggle" data-slide>
+        <button class="toggle-btn active" data-period="monthly">Monthly</button>
+        <button class="toggle-btn" data-period="yearly">Yearly <span class="save-badge">Save 20%</span></button>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card" data-slide>
+          <div class="pricing-name">Starter</div>
+          <div class="pricing-price" data-monthly="₹999" data-yearly="₹9,599">₹999<span>/month</span></div>
+          <p class="pricing-desc">Basic gym access</p>
+          <ul class="pricing-feat"><li>✓ Gym floor access</li><li>✓ Locker facility</li><li>✓ Basic equipment</li><li class="off">✗ Personal trainer</li><li class="off">✗ Diet plan</li><li class="off">✗ Group classes</li></ul>
+          <a href="pricing.html" class="btn btn-outline btn-full">Get Started</a>
+        </div>
+        <div class="pricing-card popular" data-slide data-delay="100">
+          <div class="pop-badge">🔥 Most Popular</div>
+          <div class="pricing-name">Pro</div>
+          <div class="pricing-price" data-monthly="₹1,999" data-yearly="₹19,199">₹1,999<span>/month</span></div>
+          <p class="pricing-desc">Full access + training</p>
+          <ul class="pricing-feat"><li>✓ Full gym access</li><li>✓ Personal trainer</li><li>✓ All equipment</li><li>✓ Group classes</li><li>✓ Basic diet plan</li><li class="off">✗ Transformation</li></ul>
+          <a href="pricing.html" class="btn btn-primary btn-full">Join Pro</a>
+        </div>
+        <div class="pricing-card" data-slide data-delay="200">
+          <div class="pricing-name">Beast Mode</div>
+          <div class="pricing-price" data-monthly="₹3,499" data-yearly="₹33,599">₹3,499<span>/month</span></div>
+          <p class="pricing-desc">Complete transformation</p>
+          <ul class="pricing-feat"><li>✓ Everything in Pro</li><li>✓ Custom diet plan</li><li>✓ Body transformation</li><li>✓ Weekly assessment</li><li>✓ Boxing / MMA</li><li>✓ Priority support</li></ul>
+          <a href="pricing.html" class="btn btn-outline btn-full">Go Beast</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><div class="container footer-bottom"><p>© 2024 Power Fitness. All rights reserved.</p><p>Built by <strong>Mohd Haziq</strong></p></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
